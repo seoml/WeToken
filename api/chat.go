@@ -6,6 +6,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 	"gorm.io/gorm"
 	"net/http"
 	"os"
@@ -58,7 +59,8 @@ func ChatToken(c *gin.Context) {
 		c.XML(http.StatusOK, resp)
 		return
 	case strings.Contains(mc, "客服"):
-		resp.Content = "您好，客服微信：XXXXXX"
+		kf := viper.GetString("kf")
+		resp.Content = kf
 		c.XML(http.StatusOK, resp)
 		return
 	}
@@ -93,7 +95,8 @@ func ChatToken(c *gin.Context) {
 			return
 		}
 	}
-	resp.Content = "更多新功能还未开放，敬请期待~" //没有命中上方的规则就拿这个先唬住用户
+	hello := viper.GetString("hello")
+	resp.Content = hello
 	c.XML(http.StatusOK, resp)
 	return
 }
