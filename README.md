@@ -1,7 +1,7 @@
 # WeToken
 基于公众号消息的token生成
 
-绑定路径或者独立的二级域名，公众号平台的token写在config/key.yaml里面
+绑定路径或者独立的二级域名，数据库信息和公众号token均在config/key.yaml配置文件中，服务运行端口也在
 
 ![image](https://user-images.githubusercontent.com/115400139/235605030-9f126951-3324-477a-9e9c-5897daccdaae.png)
 
