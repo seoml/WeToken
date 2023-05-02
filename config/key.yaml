@@ -7,4 +7,8 @@ mysql: #数据库信息
 wechat:
   token: wechattoken #公众号后台效验用的token，自定义
 
+hello: 你好，欢迎关注 #用户关注发送消息
+
+kf: 你好，目前没有客服呢~ #客服
+
 port: 1777 #项目运行端口
