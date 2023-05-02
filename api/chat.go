@@ -78,6 +78,7 @@ func ChatToken(c *gin.Context) {
 			return
 		} else { //否则为其生成一个新的token
 			ut.Uid = msg.FromUserName
+			ut.State = 0//默认启用状态
 			milliTimestamp := time.Now().UnixNano() / 1e6         //1、当前时间戳
 			data := fmt.Sprintf("%s%d", formUser, milliTimestamp) //2、用户id+时间戳
 			hash := sha256.Sum256([]byte(data))                   //3、生成哈希
