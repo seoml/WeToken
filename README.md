@@ -10,7 +10,7 @@
 ![21dc6fc0dec497e9390d38c7f262336](https://user-images.githubusercontent.com/115400139/235608934-ef4ab6dc-9daf-4919-8936-343247c70fb0.jpg)
 
 
-效验成功
+效验成功（token存在，并且state状态码为0）
 
 ![image](https://user-images.githubusercontent.com/115400139/235609101-7f58ba43-99a5-4bfd-8adb-6afce60d351c.png)
 
@@ -18,6 +18,6 @@
 
 ![image](https://user-images.githubusercontent.com/115400139/235609210-c40139ee-eba0-4aac-b157-af63729a2dfe.png)
 
-封禁token
+封禁token（token存在，并且state状态码为1）
 
 ![image](https://user-images.githubusercontent.com/115400139/235609348-3b953349-d706-4dd0-804d-518cbab27e67.png)
