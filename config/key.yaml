@@ -1,0 +1,10 @@
+mysql: #数据库信息
+  host: 127.0.0.1:3306 #数据库地址IP+端口
+  user: admin #数据库用户名
+  pass: 123456 #数据库密码
+  dbname: wetoken #数据库名
+
+wechat:
+  token: wechattoken #公众号后台效验用的token，自定义
+
+port: 1777 #项目运行端口
